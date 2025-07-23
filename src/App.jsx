@@ -4,10 +4,11 @@ import GameBoard from "./components/GameBoard";
 import Log from "./components/Log";
 
 function deriveActivePlayer(gameTurns) {
-  let currentPlayer = "X";
+  let currentPlayer = "X"; // "X" is the initial value
   if (gameTurns.length > 0 && gameTurns[0].player === "X") {
-    currentPlayer = "O";
+    currentPlayer = "O"; // Will be set to "O" whenever the current state is "X"
   }
+
   return currentPlayer;
 }
 
